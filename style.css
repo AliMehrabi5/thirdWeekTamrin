@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#retryButton {
+    background-color: #333;
+    color: white;
+}
+
+#retryButton:hover {
+    opacity: 0.85;
+}
+
+#status {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#usersContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.user-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h2 {
+    margin-bottom: 15px;
+}
+
+.user-card p {
+    margin-bottom: 8px;
+}
+
+.user-card button {
+    margin-top: 15px;
+    background-color: #222;
+    color: white;
+}
+
+@media (max-width: 800px) {
+
+    #usersContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .controls {
+        flex-direction: column;
+    }
+
+    #usersContainer {
+        grid-template-columns: 1fr;
+    }
+
+}
