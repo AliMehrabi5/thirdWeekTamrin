@@ -38,17 +38,12 @@ async function loadUsers() {
 
 searchInput.addEventListener("input", () => {
 
-    const searchText = searchInput.value
-        .trim()
-        .toLowerCase();
+    const searchText = searchInput.value.trim().toLowerCase();
 
 
     const filteredUsers = users.filter((user) => {
 
-        return user.name
-            .toLowerCase()
-            .includes(searchText);
-
+        return user.name.toLowerCase().includes(searchText);
     });
 
 
