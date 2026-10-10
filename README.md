@@ -37,8 +37,8 @@ https://jsonplaceholder.typicode.com/users
 │
 ├── index.html
 │
-├── css/
-│   └── style.css
+
+│   style.css
 │
 
 │   ├── api.js
